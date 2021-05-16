@@ -19,10 +19,10 @@ class Config(object):
 	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
-This is Permanent Files Store Bot!
-Send me any file I will save it in my Database. Also works for channel. Add me to channel as Admin with Edit Permission, I will add Save Uploaded File in Channel & add Sharable Button Link.
+🏷 Hi,👋 I'm a Permanent Files Store Bot!
+Send me any file I will save it in my Large Database.\n\n📜 **My Features**💡\n• I Store Files Permanent.\n• Unlimited Files,Any Size.\n• I Support any Kind of files\n• With Thumbnail & Caption.\n• I Remove Forward Tag also.\n\n**You Not need to Worry for your files**.😊
 
-🤖 **My Name:** [Files Store Bot](https://t.me/{BOT_USERNAME})
+🤖 **My Name:** [Filє Sтσяє Bot](https://t.me/{BOT_USERNAME})
 
 📝 **Language:** [Python3](https://www.python.org)
 
@@ -30,23 +30,23 @@ Send me any file I will save it in my Database. Also works for channel. Add me t
 
 📡 **Hosted on:** [Heroku](https://heroku.com)
 
-🧑🏻‍💻 **Developer:** @AbirHasan2005
+🧑🏻‍💻 **Creator:** [This Person](https://t.me/Krsna)
 
-👥 **Support Group:** [Linux Repositories](https://t.me/linux_repo)
+🤗 **Thanks To:** [Linux Repositories](https://t.me/linux_repo)
 
-📢 **Updates Channel:** [Discovery Projects](https://t.me/Discovery_Updates)
+🚶**About Dev:** [Click Here](https://t.me/HKrrish)
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Developer:** @AbirHasan2005
+🧑🏻‍💻 **Dev:** [This Person]
 
-Developer is Super Noob. Just Learning from Official Docs. Please Donate the developer for Keeping the Service Alive.
+I'm not a Professional Dev, Super Noob. Just Learning from Official Docs. Please Don't Misuse the Bot!
 
-Also remember that developer will Delete Adult Contents from Database. So better don't Store Those Kind of Things.
+📍**Remember**\n If Bot Stop, Don't Worry your files not go anywhere. Just Check Status. 👇\n• Don't Send Useless, Adults Files.\n• Don't Spam (Do one by one).\n\n 🤖 **Bot Status** : [Check here](https://telegra.ph/File-Store-Bot-05-10)\n\nWant Any help, Contact Me.👇 
 
-[Donate Now](https://www.paypal.me/AbirHasan2005) (PayPal)
+🤖 [Contact](https://t.me/KrAsst_Bot) [#NoPm]
 """
 	HOME_TEXT = """
-Hi, [{}](tg://user?id={})\n\nThis is Permanent **File Store Bot**.
+Hey!, [{}](tg://user?id={})👋\n\nYou are Right Place.😅\n\nI'm a Permanent **File Store Bot**.
 
-Send me any file I will give you a permanent Sharable Link. I Support Channel Also! Check **About Bot** Button.
+💡 Send me any file I will give you a permanent Shareable Link.\n\n• Check **Know More** Button.👇\n\nThank You :)
 """
