@@ -49,8 +49,8 @@ async def start(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("🧑🏻‍💻 Creator", url="https://t.me/HKrrish"),
+                        InlineKeyboardButton("📜 Know More", url="https://telegra.ph/File-Store-Bot-05-10")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -76,10 +76,10 @@ async def start(bot: Client, cmd: Message):
                 send_stored_file = await bot.forward_messages(chat_id=cmd.from_user.id, from_chat_id=Config.DB_CHANNEL,
                                                               message_ids=file_id)
             await send_stored_file.reply_text(
-                f"**Here is Sharable Link of this file:** https://t.me/{Config.BOT_USERNAME}?start=AbirHasan2005_{file_id}\n\n__To Retrive the Stored File, just open the link!__",
+                f"**Here is Shareable Link of this file:** https://t.me/{Config.BOT_USERNAME}?start=FileStoreBot_{file_id}\n\n__To Retrive the Stored File, just open the link!__",
                 disable_web_page_preview=True, quote=True)
         except Exception as err:
-            await cmd.reply_text(f"Something went wrong!\n\n**Error:** `{err}`")
+            await cmd.reply_text(f"Something went wrong!\n\n**Your File Not Available, Bcoz You Stored Useless, Adults Files!**\n\n**Error:** `{err}`")
 
 
 @Bot.on_message((filters.document | filters.video | filters.audio) & ~filters.edited)
@@ -99,7 +99,7 @@ async def main(bot: Client, message: Message):
             else:
                 pass
         if message.from_user.id in Config.BANNED_USERS:
-            await message.reply_text("Sorry, You are banned!\n\nContact [Support Group](https://t.me/linux_repo)",
+            await message.reply_text("Sorry, You are banned!\n\nContact [Me](https://t.me/KrAsst_Bot)",
                                      disable_web_page_preview=True)
             return
         if Config.OTHER_USERS_CAN_SAVE_FILE is False:
@@ -111,14 +111,14 @@ async def main(bot: Client, message: Message):
             await forwarded_msg.reply_text(
                 f"#PRIVATE_FILE:\n\n[{message.from_user.first_name}](tg://user?id={message.from_user.id}) Got File Link!",
                 parse_mode="Markdown", disable_web_page_preview=True)
-            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=AbirHasan2005_{file_er_id}"
+            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=FileStoreBot_{file_er_id}"
             await editable.edit(
                 f"**Your File Stored in my Database!**\n\nHere is the Permanent Link of your file: {share_link} \n\nJust Click the link to get your file!",
                 parse_mode="Markdown",
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton("Open Link", url=share_link)],
-                     [InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates"),
-                      InlineKeyboardButton("Support Group", url="https://t.me/linux_repo")]]
+                     [InlineKeyboardButton("Creator", url="https://t.me/KrAsst_Bot"),
+                      InlineKeyboardButton("Share Bot", url="https://t.me/share/url?url=Hi%2C%20I%20Just%20Found%20a%20Useful%20Bot%20For%20You%20%F0%9F%98%8A%0A%40Tgfilestore_Bot%20%0AU%20can%20use%2C%20It%20is%20like%20a%20Cloud%20Storage%20In%20Telegram%20With%20Permanent%20Shareable%20link.%20%0A%F0%9F%98%B1%F0%9F%98%85")]]
                 ),
                 disable_web_page_preview=True
             )
@@ -159,10 +159,10 @@ async def main(bot: Client, message: Message):
         try:
             forwarded_msg = await message.forward(Config.DB_CHANNEL)
             file_er_id = forwarded_msg.message_id
-            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=AbirHasan2005_{file_er_id}"
+            share_link = f"https://t.me/{Config.BOT_USERNAME}?start=FileStoreBot_{file_er_id}"
             CH_edit = await bot.edit_message_reply_markup(message.chat.id, message.message_id,
                                                           reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(
-                                                              "Get Sharable Stored Link", url=share_link)]]))
+                                                              "Get Shareable Stored Link", url=share_link)]]))
             if message.chat.username:
                 await forwarded_msg.reply_text(
                     f"#CHANNEL_BUTTON:\n\n[{message.chat.title}](https://t.me/{message.chat.username}/{CH_edit.message_id}) Channel's Broadcasted File's Button Added!")
@@ -301,8 +301,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/AbirHasan2005/PyroFilesStoreBot")
+                        InlineKeyboardButton("Share the Bot",
+                                             url="https://t.me/share/url?url=Hi%2C%20I%20Just%20Found%20a%20Useful%20Bot%20For%20You%20%F0%9F%98%8A%0A%40Tgfilestore_Bot%20%0AU%20can%20use%2C%20It%20is%20like%20a%20Cloud%20Storage%20In%20Telegram%20With%20Permanent%20Shareable%20link.%20%0A%F0%9F%98%B1%F0%9F%98%85")
                     ],
                     [
                         InlineKeyboardButton("Go Home", callback_data="gotohome"),
@@ -319,8 +319,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Source Codes of Bot",
-                                             url="https://github.com/AbirHasan2005/PyroFilesStoreBot")
+                        InlineKeyboardButton("Share the Bot",
+                                             url="https://t.me/share/url?url=Hi%2C%20I%20Just%20Found%20a%20Useful%20Bot%20For%20You%20%F0%9F%98%8A%0A%40Tgfilestore_Bot%20%0AU%20can%20use%2C%20It%20is%20like%20a%20Cloud%20Storage%20In%20Telegram%20With%20Permanent%20Shareable%20link.%20%0A%F0%9F%98%B1%F0%9F%98%85")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -337,8 +337,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("Creator", url="https://t.me/HKrrish"),
+                        InlineKeyboardButton("Know More", url="https://telegra.ph/File-Store-Bot-05-10")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
@@ -354,7 +354,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 user = await bot.get_chat_member(int(Config.UPDATES_CHANNEL), cmd.message.chat.id)
                 if user.status == "kicked":
                     await cmd.message.edit(
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                        text="Sorry Sir, You are Banned to use me. Contact My [Creator](https://t.me/KrAsst_Bot).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -377,7 +377,7 @@ async def button(bot: Client, cmd: CallbackQuery):
                 return
             except Exception:
                 await cmd.message.edit(
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                    text="Something went Wrong. Contact my [Creator](https://t.me/KrAsst_Bot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -389,8 +389,8 @@ async def button(bot: Client, cmd: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Support Group", url="https://t.me/linux_repo"),
-                        InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")
+                        InlineKeyboardButton("Creator", url="https://t.me/HKrrish"),
+                        InlineKeyboardButton("Know More", url="https://telegra.ph/File-Store-Bot-05-10")
                     ],
                     [
                         InlineKeyboardButton("About Bot", callback_data="aboutbot"),
