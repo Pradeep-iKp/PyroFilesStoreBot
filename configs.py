@@ -20,7 +20,7 @@ class Config(object):
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
 🏷 Hi,👋 I'm a Permanent Files Store Bot!
-Send me any file I will save it in my Large Database.\n\n📜 **My Features**💡\n• I Store Files Permanent.\n• Unlimited Files,Any Size.\n• I Support any Kind of files\n• With Thumbnail & Caption.\n• I Remove Forward Tag also.\n\n**You Not need to Worry for your files**.😊
+Send me any file I will save it in my Large Database.\n\n📜 **My Features**💡\n• I Store Files Permanent.\n• Unlimited Files,Any Size.\n• I Support any Kind of files.\n• With Thumbnail & Caption.\n• I Remove Forward Tag also.\n\n**You Not need to Worry for your files**.😊
 
 🤖 **My Name:** [Filє Sтσяє Bot](https://t.me/{BOT_USERNAME})
 
@@ -37,16 +37,16 @@ Send me any file I will save it in my Large Database.\n\n📜 **My Features**�
 🚶**About Dev:** [Click Here](https://t.me/HKrrish)
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Dev:** [This Person]
+🧑🏻‍💻 **Dev:** [This Person](https://t.me/Krsna)
 
 I'm not a Professional Dev, Super Noob. Just Learning from Official Docs. Please Don't Misuse the Bot!
 
-📍**Remember**\n If Bot Stop, Don't Worry your files not go anywhere. Just Check Status. 👇\n• Don't Send Useless, Adults Files.\n• Don't Spam (Do one by one).\n\n 🤖 **Bot Status** : [Check here](https://telegra.ph/File-Store-Bot-05-10)\n\nWant Any help, Contact Me.👇 
+📍**Remember**\n• If Bot Stop, Don't Worry your files not go anywhere. Just Check Status. 👇\n• Don't Send Useless, Adults Files.\n• Don't Spam (Do one by one).\n\n 🤖 **Bot Status** : [Check here](https://telegra.ph/File-Store-Bot-05-10)\n\nWant Any help, Contact Me.👇 
 
 🤖 [Contact](https://t.me/KrAsst_Bot) [#NoPm]
 """
 	HOME_TEXT = """
-Hey!, [{}](tg://user?id={})👋\n\nYou are Right Place.😅\n\nI'm a Permanent **File Store Bot**.
+Hey!, [{}](tg://user?id={}) 👋\n\nYou are Right Place.😊\n\nI'm a Permanent **File Store Bot**.
 
 💡 Send me any file I will give you a permanent Shareable Link.\n\n• Check **Know More** Button.👇\n\nThank You :)
 """
