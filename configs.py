@@ -37,7 +37,7 @@ Send me any file I will save it in my Large Database.\n\n📜 **My Features**�
 🚶**About Dev:** [Click Here](https://t.me/HKrrish)
 """
 	ABOUT_DEV_TEXT = f"""
-🧑🏻‍💻 **Dev:** [This Person](https://t.me/Krsna)
+🧑🏻‍💻 **Dev:** [This Person](https://t.me/HKrsna)
 
 I'm not a Professional Dev, Super Noob. Just Learning from Official Docs. Please Don't Misuse the Bot!
 
@@ -48,5 +48,5 @@ I'm not a Professional Dev, Super Noob. Just Learning from Official Docs. Please
 	HOME_TEXT = """
 Hey!, [{}](tg://user?id={}) 👋\n\nYou are Right Place.😊\n\nI'm a Permanent **File Store Bot**.
 
-💡 Send me any file I will give you a permanent Shareable Link.\n\n• Check **Know More** Button.👇\n\nThank You :)
+💡 Send me any file I will give you a **Permanent Shareable** Link.\n\n• Check **'Know More'** Button.👇\n\n**Thank You** :)
 """
