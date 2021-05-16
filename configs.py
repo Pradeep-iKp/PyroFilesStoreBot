@@ -20,7 +20,7 @@ class Config(object):
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	ABOUT_BOT_TEXT = f"""
 🏷 Hi,👋 I'm a Permanent Files Store Bot!
-Send me any file I will save it in my Large Database.\n\n📜 **My Features**💡\n• I Store Files Permanent.\n• Unlimited Files,Any Size.\n• I Support any Kind of files.\n• With Thumbnail & Caption.\n• I Remove Forward Tag also.\n\n**You Not need to Worry for your files**.😊
+Send me any file I will save it in my Large Database.\n\n📜 **My Features**💡\n• I Store Files Permanent.\n• Unlimited Files, Any Size.\n• I Support any Kind of files.\n• With Thumbnail & Caption.\n• I Remove Forward Tag also.\n\n**You Not need to Worry for your files**.😊
 
 🤖 **My Name:** [Filє Sтσяє Bot](https://t.me/{BOT_USERNAME})
 
